@@ -9,80 +9,112 @@ function makeTemplate() {
         </header>
         <form name="exam">
             <section class="q1" name="q1">
-                Question 1: What was Houdini's favorite flavor of pop-tarts?
-                <label>
-                    a. Brown-Sugar Cinnamon
+                Question 1:   What was Houdini's favorite flavor of pop-tarts?
+                <div class="start">
                     <input type="radio" name="q1a">
-                </label>
-                <label>
-                    b. Strawberry
+                    <label>
+                        a. Brown-Sugar Cinnamon
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q1b">
-                </label>
-                <label>
-                    c. Blueberry
+                    <label>
+                        b. Strawberry
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q1c">
-                </label>
-                <label>
-                    d. Trick question - Houdini famously hated pop-tarts!
+                    <label>
+                        c. Blueberry
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q1d">
-                </label>
+                    <label>
+                        d. Trick question - Houdini famously hated pop-tarts!
+                    </label>
+                </div>
             </section>
             <section class="q2" name="q2">
-                Question 2: What was Herodotus' favorite flavor of popsicle?
-                <label>
-                    a. Grape
+                Question 2:   What was Herodotus' favorite flavor of popsicle?
+                <div class="start">
                     <input type="radio" name="q2a">
-                </label>
-                <label>
-                    b. Orange
+                    <label>
+                        a. Grape
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q2b">
-                </label>
-                <label>
-                    c. Red
+                    <label>
+                        b. Orange
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q2c">
-                </label>
-                <label>
-                    d. Another trick question - the ancient Greeks' freezers were notoriously inefficient
+                    <label>
+                        c. Red
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q2d">
-                </label>
+                    <label>
+                        d. Another trick question - the ancient Greeks' freezers were notoriously inefficient
+                    </label>
+                </div>
             </section>
             <section class="q3" name="q3">
-                Question 3: Which well-known figure was the most accomplished figure skater?
-                <label>
-                    a. Peggy Fleming
+                Question 3:   Which well-known figure was the most accomplished figure skater?
+                <div class="start">
                     <input type="radio" name="q3a">
-                </label>
-                <label>
-                    b. Mrs. Claus
+                    <label>
+                        a. Peggy Fleming
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q3b">
-                </label>
-                <label>
-                    c. Brian Denehee
+                    <label>
+                        b. Mrs. Claus
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q3c">
-                </label>
-                <label>
-                    d. Napoleon Bonaparte
+                    <label>
+                        c. Brian Denehee
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q3d">
-                </label>
+                    <label>
+                        d. Napoleon Bonaparte
+                    </label>
+                </div>
             </section>
             <section class="q4" name="q4">
-                Question 4: Which question in this quiz is the silliest?
-                <label>
-                    a. Question 1
+                Question 4:   Which question in this quiz is the silliest?
+                <div>
                     <input type="radio" name="q4a">
-                </label>
-                <label>
-                    b. Question 2
+                    <label>
+                        a. Question 1
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q4b">
-                </label>
-                <label>
-                    c. Question 3
+                    <label>
+                        b. Question 2
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q4c">
-                </label>
-                <label>
-                    d. Trick question - it's this one - they're all ridiculous!
+                    <label>
+                        c. Question 3
+                    </label>
+                </div>
+                <div>
                     <input type="radio" name="q4d">
-                </label>
+                    <label>
+                        d. Trick question - it's this one - they're all ridiculous!
+                    </label>
+                </div>
                 <input type="submit" name="submit">
             </section>
         </form>
@@ -94,7 +126,7 @@ class Quiz {
         this.scoreQuiz = scoreQuiz;
     }
     render() {
-        const dom = makeTemplate;
+        const dom = makeTemplate();
         const form = dom.querySelector('form');
     
         form.addEventListener('submit', event => {

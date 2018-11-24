@@ -1,5 +1,5 @@
-import app from './app.js';
+import Quiz from './quiz.js';
 
-
-const root = document.getElementById('root');
-root.appendChild(app.render());
+const quiz = new Quiz();
+const root = document.getElementById('exam');
+root.appendChild(quiz.render());
